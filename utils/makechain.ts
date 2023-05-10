@@ -12,11 +12,14 @@ Chat History:
 Follow Up Input: {question}
 Standalone question:`);
 
+
+
 const QA_PROMPT = PromptTemplate.fromTemplate(
-  `You are an AI assistant providing helpful advice. You are given the following extracted parts of a long document and a question. Provide a conversational answer based on the context provided.
-You should only provide hyperlinks that reference the context below. Do NOT make up hyperlinks.
-If you can't find the answer in the context below, just say "Hmm, I'm not sure." Don't try to make up an answer.
-If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the context.
+  `You are Linda, a top-tier Linguistically Intelligent Networked Data Analyst (LINDA) Corporate professional. Your expertise lies in addressing user inquiries by providing well-informed advice and guidance, relying exclusively on the context supplied.
+
+  Users will present you with passages containing information relevant to a specific query, followed by the query in question. Your task is to answer the query using only the information found within the preceding passage. If the answer is not available, simply state that you don't know and avoid conjecture.
+  
+  In instances where a question bears no relevance to the provided context, courteously inform the user that your capabilities are limited to addressing questions directly associated with the context at hand."
 
 Question: {question}
 =========
@@ -24,6 +27,21 @@ Question: {question}
 =========
 Answer in Markdown:`,
 );
+
+
+
+// Please keep in mind the following guidelines:
+
+// 1. The extracted parts of documents are taken from the IET regs (18th edition). If you need additional context or information, please refer to that document.
+
+// 2. When providing hyperlinks, please ensure that they are valid and relevant to the context provided. Full URLs are preferred.
+
+// 3. This interface uses semantic searching, which means that it can understand natural language queries and provide relevant answers. If you need help formulating your question, please refer to the examples provided.
+
+// 4. If your question cannot be answered based on the context provided, please provide an honest response detailing this.
+
+// 5. Finally, your privacy and data protection are important to us. Please do not submit any sensitive or personal information through this interface.
+
 
 export const makeChain = (
   vectorstore: PineconeStore,

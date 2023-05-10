@@ -1,0 +1,14 @@
+
+> gpt4-langchain-pdf-chatbot@0.1.0 dev D:\AI\Projects\nuclear_AI\ \ \gpt4-pdf-chatbot-langchain
+> next dev
+
+[32mready[39m - started server on 0.0.0.0:3000, url: http://localhost:3000
+[36minfo[39m  - Loaded env from D:\AI\Projects\nuclear_AI\ \ \gpt4-pdf-chatbot-langchain\.env
+[35mevent[39m - compiled client and server successfully in 4.5s (173 modules)
+[36mwait[39m  - compiling...
+[35mevent[39m - compiled successfully in 263 ms (139 modules)
+[36mwait[39m  - compiling /_error (client and server)...
+[35mevent[39m - compiled client and server successfully in 228 ms (174 modules)
+[36mwait[39m  - compiling / (client and server)...
+[35mevent[39m - compiled client and server successfully in 3s (1327 modules)
+[?25h

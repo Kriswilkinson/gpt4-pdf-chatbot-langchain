@@ -1,9 +1,10 @@
-.main {
+.main .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -24,12 +25,12 @@
   font-size: 1.1rem;
   padding: 1rem 2rem 1rem 2rem;
   width: 75vw;
-  border-radius: 0.5rem;
+  border-radius: 0.9rem;
   border: 1px solid #d9d9e3;
   background: #ffffff;
   color: #000;
   outline: none;
-}
+  box-shadow: 0 4px 6px rgba(6, 109, 194, 0.479);}
 
 .textarea:disabled {
   opacity: 0.5;
@@ -38,7 +39,7 @@
 .textarea:focus {
   outline: none;
   border-color: #6b7280;
-  box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.5);
+  box-shadow: 0 4px 6px rgb(6, 109, 194);
 }
 
 .textarea::placeholder {
@@ -54,6 +55,8 @@
   padding: 0.3rem;
   border: none;
   display: flex;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .loadingwheel {
@@ -85,6 +88,7 @@
   height: 100%;
   overflow-y: scroll;
   border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(6, 109, 194, 0.479);
 }
 
 .messagelistloading {
@@ -98,6 +102,9 @@
   background: #ffffff;
   padding: 1.5rem;
   color: #000;
+  box-shadow: 0 4px 6px rgba(6, 109, 194, 0.479);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .usermessagewaiting {
@@ -109,6 +116,9 @@
   animation: loading-gradient 2s ease-in-out infinite;
   animation-direction: alternate;
   animation-name: loading-gradient;
+  box-shadow: 0 4px 6px rgba(6, 109, 194, 0.479);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes loading-gradient {
@@ -125,6 +135,9 @@
   padding: 1.5rem;
   color: #000;
   animation: fadein 0.5s;
+  box-shadow: 0 4px 6px rgba(6, 109, 194, 0.479);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes fadein {
@@ -190,13 +203,14 @@
 
 .cloud {
   width: 75vw;
-  height: 65vh;
+  height: 55vh;
   background: #ffffff;
   border-radius: 0.5rem;
   border: 1px solid #d9d9e3;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(6, 109, 194, 0.479);
 }
 
 .pointsnormal {
